@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC670E22D4C733002D1C5B /* VideoMerger.swift */; };
+		D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC671022D4C77B002D1C5B /* transtion_shader.metal */; };
+		D3CC671822D4C806002D1C5B /* black.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671422D4C806002D1C5B /* black.mov */; };
+		D3CC671922D4C806002D1C5B /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671522D4C806002D1C5B /* silence.mp3 */; };
+		D3CC671A22D4C806002D1C5B /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671622D4C806002D1C5B /* movie1.mov */; };
+		D3CC671B22D4C806002D1C5B /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671722D4C806002D1C5B /* movie2.mov */; };
 		F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975922D23FC6000D2A40 /* AppDelegate.swift */; };
 		F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975B22D23FC6000D2A40 /* ViewController.swift */; };
 		F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323975D22D23FC6000D2A40 /* Main.storyboard */; };
 		F323976122D23FC7000D2A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F323976022D23FC7000D2A40 /* Assets.xcassets */; };
 		F323976422D23FC7000D2A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323976222D23FC7000D2A40 /* LaunchScreen.storyboard */; };
-		F323977B22D240F0000D2A40 /* ATMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323977822D240F0000D2A40 /* ATMetal.swift */; };
-		F323977C22D240F0000D2A40 /* ATKernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = F323977922D240F0000D2A40 /* ATKernels.metal */; };
-		F323977D22D240F0000D2A40 /* MetalCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323977A22D240F0000D2A40 /* MetalCombine.swift */; };
-		F323977F22D240F6000D2A40 /* ATKernels.metallib in Resources */ = {isa = PBXBuildFile; fileRef = F323977E22D240F6000D2A40 /* ATKernels.metallib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3CC670E22D4C733002D1C5B /* VideoMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
+		D3CC671022D4C77B002D1C5B /* transtion_shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transtion_shader.metal; sourceTree = "<group>"; };
+		D3CC671422D4C806002D1C5B /* black.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = black.mov; sourceTree = "<group>"; };
+		D3CC671522D4C806002D1C5B /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		D3CC671622D4C806002D1C5B /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
+		D3CC671722D4C806002D1C5B /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
 		F323975622D23FC6000D2A40 /* GLMetalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMetalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F323975922D23FC6000D2A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F323975B22D23FC6000D2A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,10 +34,6 @@
 		F323976022D23FC7000D2A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F323976322D23FC7000D2A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F323976522D23FC7000D2A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F323977822D240F0000D2A40 /* ATMetal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMetal.swift; sourceTree = "<group>"; };
-		F323977922D240F0000D2A40 /* ATKernels.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ATKernels.metal; sourceTree = "<group>"; };
-		F323977A22D240F0000D2A40 /* MetalCombine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalCombine.swift; sourceTree = "<group>"; };
-		F323977E22D240F6000D2A40 /* ATKernels.metallib */ = {isa = PBXFileReference; lastKnownFileType = "archive.metal-library"; path = ATKernels.metallib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3CC671222D4C798002D1C5B /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		D3CC671322D4C7A4002D1C5B /* SampleVideos */ = {
+			isa = PBXGroup;
+			children = (
+				D3CC671422D4C806002D1C5B /* black.mov */,
+				D3CC671622D4C806002D1C5B /* movie1.mov */,
+				D3CC671722D4C806002D1C5B /* movie2.mov */,
+				D3CC671522D4C806002D1C5B /* silence.mp3 */,
+			);
+			path = SampleVideos;
+			sourceTree = "<group>";
+		};
 		F323974D22D23FC6000D2A40 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +85,10 @@
 		F323975822D23FC6000D2A40 /* GLMetalVideo */ = {
 			isa = PBXGroup;
 			children = (
-				F323976B22D23FCE000D2A40 /* MetalLib */,
+				D3CC671322D4C7A4002D1C5B /* SampleVideos */,
+				D3CC671222D4C798002D1C5B /* Transitions */,
 				F323975922D23FC6000D2A40 /* AppDelegate.swift */,
+				D3CC670E22D4C733002D1C5B /* VideoMerger.swift */,
 				F323975B22D23FC6000D2A40 /* ViewController.swift */,
 				F323975D22D23FC6000D2A40 /* Main.storyboard */,
 				F323976022D23FC7000D2A40 /* Assets.xcassets */,
@@ -71,33 +96,6 @@
 				F323976522D23FC7000D2A40 /* Info.plist */,
 			);
 			path = GLMetalVideo;
-			sourceTree = "<group>";
-		};
-		F323976B22D23FCE000D2A40 /* MetalLib */ = {
-			isa = PBXGroup;
-			children = (
-				F323976D22D23FDA000D2A40 /* Wrapper */,
-				F323976C22D23FD5000D2A40 /* Lib */,
-			);
-			path = MetalLib;
-			sourceTree = "<group>";
-		};
-		F323976C22D23FD5000D2A40 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				F323977E22D240F6000D2A40 /* ATKernels.metallib */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		F323976D22D23FDA000D2A40 /* Wrapper */ = {
-			isa = PBXGroup;
-			children = (
-				F323977922D240F0000D2A40 /* ATKernels.metal */,
-				F323977822D240F0000D2A40 /* ATMetal.swift */,
-				F323977A22D240F0000D2A40 /* MetalCombine.swift */,
-			);
-			path = Wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +156,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CC671B22D4C806002D1C5B /* movie2.mov in Resources */,
+				D3CC671922D4C806002D1C5B /* silence.mp3 in Resources */,
 				F323976422D23FC7000D2A40 /* LaunchScreen.storyboard in Resources */,
 				F323976122D23FC7000D2A40 /* Assets.xcassets in Resources */,
+				D3CC671A22D4C806002D1C5B /* movie1.mov in Resources */,
+				D3CC671822D4C806002D1C5B /* black.mov in Resources */,
 				F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */,
-				F323977F22D240F6000D2A40 /* ATKernels.metallib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,11 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F323977D22D240F0000D2A40 /* MetalCombine.swift in Sources */,
+				D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
-				F323977C22D240F0000D2A40 /* ATKernels.metal in Sources */,
-				F323977B22D240F0000D2A40 /* ATMetal.swift in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
+				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLMetalVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GLMetalVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
