@@ -30,12 +30,17 @@ class ViewController: UIViewController {
         }
         
         // Export to file
-        let path = NSTemporaryDirectory().appending("mergedVideo.mp4")
+        let dirPaths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        let docsURL = dirPaths[0]
+        
+        let path = docsURL.path.appending("/mergedVideo.mp4")
         let exportURL = URL.init(fileURLWithPath: path)
         
-        var videoMerger = VideoMerger()
+        var videoMerger = VideoMerger(url1: url1, url2: url2, export: exportURL, vc: self)
         
-        videoMerger.startRendering(url1: url1, url2: url2, toMP4File: exportURL, viewController: self)
+        videoMerger.startRendering()
+        
     }
     
     func openPreviewScreen(_ videoURL:URL) -> Void {
