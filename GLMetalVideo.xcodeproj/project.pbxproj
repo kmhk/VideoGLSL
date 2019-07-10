@@ -13,6 +13,7 @@
 		D3CC671922D4C806002D1C5B /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671522D4C806002D1C5B /* silence.mp3 */; };
 		D3CC671A22D4C806002D1C5B /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671622D4C806002D1C5B /* movie1.mov */; };
 		D3CC671B22D4C806002D1C5B /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671722D4C806002D1C5B /* movie2.mov */; };
+		D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC672222D59B2D002D1C5B /* transition_circle.metal */; };
 		F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975922D23FC6000D2A40 /* AppDelegate.swift */; };
 		F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975B22D23FC6000D2A40 /* ViewController.swift */; };
 		F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323975D22D23FC6000D2A40 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		D3CC671522D4C806002D1C5B /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
 		D3CC671622D4C806002D1C5B /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
 		D3CC671722D4C806002D1C5B /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
+		D3CC672222D59B2D002D1C5B /* transition_circle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_circle.metal; sourceTree = "<group>"; };
 		F323975622D23FC6000D2A40 /* GLMetalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMetalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F323975922D23FC6000D2A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F323975B22D23FC6000D2A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
+				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
+				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

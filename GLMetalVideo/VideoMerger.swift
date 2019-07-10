@@ -19,7 +19,7 @@ class VideoMerger {
     
     var callback : ViewController
     
-    var transtionSecondes : Float = 5
+    var transtionSecondes : Double = 5
     
     init(url1: URL, url2: URL, export: URL, vc : ViewController) {
         videoUrl1 = url1
@@ -211,11 +211,17 @@ final class VideoWriter {
 
 final class VideoCompositionRender {
     
-    let reader: VideoSeqReader
+    let header_reader: VideoSeqReader
+    let tail_reader: VideoSeqReader
+    
+    let header_duration : CMTime
+    let tail_duration : CMTime
+    
+    var presentationTime : CMTime = CMTime.zero
     
     var frameCount = 0
     
-    var transtionSecondes : Float = 5
+    var transtionSecondes : Double = 5
     
     var inputTime: CFTimeInterval?
     
@@ -226,13 +232,17 @@ final class VideoCompositionRender {
     private var computePipelineState: MTLComputePipelineState
     
     init(asset: AVAsset, asset1: AVAsset) {
-        self.reader = VideoSeqReader(asset: asset)
+        header_reader = VideoSeqReader(asset: asset)
+        tail_reader = VideoSeqReader(asset: asset1)
+        
+        header_duration = asset.duration
+        tail_duration = asset1.duration
         
         // Get the default metal device.
         let metalDevice = MTLCreateSystemDefaultDevice()!
         
         // Create a command queue.
-        self.commandQueue = metalDevice.makeCommandQueue()!
+        commandQueue = metalDevice.makeCommandQueue()!
         
         // Create the metal library containing the shaders
         let bundle = Bundle.main
@@ -240,10 +250,10 @@ final class VideoCompositionRender {
         let library = try! metalDevice.makeLibrary(filepath: url!.path)
         
         // Create a function with a specific name.
-        let function = library.makeFunction(name: "colorKernel")!
+        let function = library.makeFunction(name: "transition_circle")!
         
         // Create a compute pipeline with the above function.
-        self.computePipelineState = try! metalDevice.makeComputePipelineState(function: function)
+        computePipelineState = try! metalDevice.makeComputePipelineState(function: function)
         
         // Initialize the cache to convert the pixel buffer into a Metal texture.
         var textCache: CVMetalTextureCache?
@@ -251,46 +261,80 @@ final class VideoCompositionRender {
             fatalError("Unable to allocate texture cache.")
         }
         else {
-            self.textureCache = textCache
+            textureCache = textCache
         }
         
     }
     
     func next() -> (CVPixelBuffer, CMTime)? {
         
-        if let frame = reader.next() {
+        if presentationTime.seconds < header_duration.seconds - transtionSecondes {
             
-            let frameRate = reader.nominalFrameRate
-            let presentationTime = CMTimeMake(value: Int64(frameCount * 600), timescale: Int32(600 * frameRate))
-            //let image = frame.filterWith(filters: filters)
-            
-            if let targetTexture = render(pixelBuffer: frame, pixelBuffer2: frame) {
-                var outPixelbuffer: CVPixelBuffer?
-                if let datas = targetTexture.buffer?.contents() {
-                    CVPixelBufferCreateWithBytes(kCFAllocatorDefault, targetTexture.width,
-                                                 targetTexture.height, kCVPixelFormatType_64RGBAHalf, datas,
-                                                 targetTexture.bufferBytesPerRow, nil, nil, nil, &outPixelbuffer);
-                    if outPixelbuffer != nil {
-                        frameCount += 1
-                        
-                        return (outPixelbuffer!, presentationTime)
-                    }
-                    
-                }
+            if let frame = header_reader.next() {
+                
+                let frameRate = header_reader.nominalFrameRate
+                presentationTime = CMTimeMake(value: Int64(frameCount * 600), timescale: Int32(600 * frameRate))
+                //let image = frame.filterWith(filters: filters)
+                
+                print("comet")
+                frameCount += 1
+                
+                return (frame, presentationTime)
             }
             
             
-            print("comet")
-            frameCount += 1
+        } else if presentationTime.seconds >= header_duration.seconds - transtionSecondes && presentationTime.seconds < header_duration.seconds - 0.3 {
             
-            return (frame, presentationTime)
+            if let frame = header_reader.next(), let frame1 = tail_reader.next() {
+                
+                let frameRate = header_reader.nominalFrameRate
+                presentationTime = CMTimeMake(value: Int64(frameCount * 600), timescale: Int32(600 * frameRate))
+                //let image = frame.filterWith(filters: filters)
+                var progress = (header_duration.seconds - presentationTime.seconds) / transtionSecondes
+                if let targetTexture = render(pixelBuffer: frame, pixelBuffer2: frame1, progress: Float(progress)) {
+                    var outPixelbuffer: CVPixelBuffer?
+                    if let datas = targetTexture.buffer?.contents() {
+                        CVPixelBufferCreateWithBytes(kCFAllocatorDefault, targetTexture.width,
+                                                     targetTexture.height, kCVPixelFormatType_64RGBAHalf, datas,
+                                                     targetTexture.bufferBytesPerRow, nil, nil, nil, &outPixelbuffer);
+                        if outPixelbuffer != nil {
+                            frameCount += 1
+                            
+                            return (outPixelbuffer!, presentationTime)
+                        }
+                        
+                    }
+                }
+                
+                
+                print("comet")
+                frameCount += 1
+                
+                return (frame, presentationTime)
+            }
+            
+        } else {
+            
+            if let frame = tail_reader.next() {
+                
+                let frameRate = tail_reader.nominalFrameRate
+                presentationTime = CMTimeMake(value: Int64(frameCount * 600), timescale: Int32(600 * frameRate))
+                //let image = frame.filterWith(filters: filters)
+                
+                print("comet")
+                frameCount += 1
+                
+                return (frame, presentationTime)
+            }
+            
+            
         }
         
         return nil
         
     }
     
-    private func render(pixelBuffer: CVPixelBuffer, pixelBuffer2: CVPixelBuffer) -> MTLTexture? {
+    private func render(pixelBuffer: CVPixelBuffer, pixelBuffer2: CVPixelBuffer, progress: Float) -> MTLTexture? {
         // here the metal code
         // Check if the pixel buffer exists
         
@@ -348,7 +392,7 @@ final class VideoCompositionRender {
             MTLSizeMake(Int(1280) / threadGroupCount.width, Int(720) / threadGroupCount.height, 1)
         }()
         // Convert the time in a metal buffer.
-        var time = Float(CMTime.zero.seconds)
+        var time = Float(progress)
         computeCommandEncoder!.setBytes(&time, length: MemoryLayout<Float>.size, index: 0)
         
         // Encode a threadgroup's execution of a compute function
@@ -395,3 +439,4 @@ final class VideoCompositionRender {
     
     
 }
+
