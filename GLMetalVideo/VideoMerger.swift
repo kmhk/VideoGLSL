@@ -21,6 +21,8 @@ class VideoMerger {
     
     var transtionSecondes : Double = 5
     
+    var transtion_function = "transition_colorphase"
+    
     init(url1: URL, url2: URL, export: URL, vc : ViewController) {
         videoUrl1 = url1
         videoUrl2 = url2
@@ -31,7 +33,7 @@ class VideoMerger {
     
     func startRendering() {
         
-        let composition : VideoCompositionRender = VideoCompositionRender(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        let composition : VideoCompositionRender = VideoCompositionRender(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2), function: transtion_function)
         
         composition.transtionSecondes = transtionSecondes
         
@@ -223,6 +225,8 @@ final class VideoCompositionRender {
     
     var transtionSecondes : Double = 5
     
+    var transtion_function = "transition_colorphase"
+    
     var inputTime: CFTimeInterval?
     
     var pixelBuffer: CVPixelBuffer?
@@ -231,9 +235,10 @@ final class VideoCompositionRender {
     private var commandQueue: MTLCommandQueue
     private var computePipelineState: MTLComputePipelineState
     
-    init(asset: AVAsset, asset1: AVAsset) {
+    init(asset: AVAsset, asset1: AVAsset, function: String) {
         header_reader = VideoSeqReader(asset: asset)
         tail_reader = VideoSeqReader(asset: asset1)
+        transtion_function = function
         
         header_duration = asset.duration
         tail_duration = asset1.duration
@@ -250,7 +255,7 @@ final class VideoCompositionRender {
         let library = try! metalDevice.makeLibrary(filepath: url!.path)
         
         // Create a function with a specific name.
-        let function = library.makeFunction(name: "transition_circle")!
+        let function = library.makeFunction(name: transtion_function)!
         
         // Create a compute pipeline with the above function.
         computePipelineState = try! metalDevice.makeComputePipelineState(function: function)

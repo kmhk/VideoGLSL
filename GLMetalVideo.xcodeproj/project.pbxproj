@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */; };
+		D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C922D67CC400C8B244 /* transition_colorphase.metal */; };
+		D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565CB22D67CD700C8B244 /* transition_wind.metal */; };
 		D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC670E22D4C733002D1C5B /* VideoMerger.swift */; };
 		D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC671022D4C77B002D1C5B /* transtion_shader.metal */; };
 		D3CC671822D4C806002D1C5B /* black.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671422D4C806002D1C5B /* black.mov */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_windowblinds.metal; sourceTree = "<group>"; };
+		D3C565C922D67CC400C8B244 /* transition_colorphase.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_colorphase.metal; sourceTree = "<group>"; };
+		D3C565CB22D67CD700C8B244 /* transition_wind.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_wind.metal; sourceTree = "<group>"; };
 		D3CC670E22D4C733002D1C5B /* VideoMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
 		D3CC671022D4C77B002D1C5B /* transtion_shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transtion_shader.metal; sourceTree = "<group>"; };
 		D3CC671422D4C806002D1C5B /* black.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = black.mov; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			children = (
 				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
 				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
+				D3C565C922D67CC400C8B244 /* transition_colorphase.metal */,
+				D3C565CB22D67CD700C8B244 /* transition_wind.metal */,
+				D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -176,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */,
 				D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */,
+				D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
+				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,

@@ -12,7 +12,9 @@ import AVKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var filterChoice: UISegmentedControl!
     @IBOutlet weak var mergeVideos: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,11 +41,34 @@ class ViewController: UIViewController {
         
         var videoMerger = VideoMerger(url1: url1, url2: url2, export: exportURL, vc: self)
         
+        switch filterChoice.selectedSegmentIndex {
+        case 0:
+            videoMerger.transtion_function = "transition_circle"
+            break
+        case 1:
+            videoMerger.transtion_function = "transition_colorphase"
+            break
+        case 2:
+            videoMerger.transtion_function = "transition_windowblinds"
+            break
+        case 3:
+            videoMerger.transtion_function = "transition_wind"
+            break
+        default:
+            videoMerger.transtion_function = "transition_colorphase"
+            break
+        }
+        mergeVideos.isEnabled = false
+        
         videoMerger.startRendering()
         
     }
     
     func openPreviewScreen(_ videoURL:URL) -> Void {
+        DispatchQueue.main.async {
+            self.mergeVideos.isEnabled = true
+        }
+        
         let player = AVPlayer(url: videoURL)
         let playerController = AVPlayerViewController()
         playerController.player = player
@@ -53,4 +78,3 @@ class ViewController: UIViewController {
         })
     }
 }
-
