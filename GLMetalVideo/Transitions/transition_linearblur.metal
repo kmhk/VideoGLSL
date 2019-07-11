@@ -34,7 +34,7 @@ kernel void transition_linearblur(texture2d<float, access::read> inTexture [[ te
     float4 c1 = float4(0.0);
     float4 c2 = float4(0.0);
     
-    float disp = intensity*(0.5-/*distance*/(0.5 - prog));
+    float disp = intensity*(0.5-/*distance(0.5, prog)*/abs(0.5 - prog));
     for (int xi=0; xi<passes; xi++)
     {
         float x = float(xi) / float(passes) - 0.5;
