@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3A9347A22D6C0D7004B5ECA /* transition_displacement.metal */; };
+		D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3A9347C22D6C172004B5ECA /* transition_linearblur.metal */; };
+		D3A9347F22D6C194004B5ECA /* transition_glitchmemories.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */; };
 		D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */; };
 		D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C922D67CC400C8B244 /* transition_colorphase.metal */; };
 		D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565CB22D67CD700C8B244 /* transition_wind.metal */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3A9347A22D6C0D7004B5ECA /* transition_displacement.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_displacement.metal; sourceTree = "<group>"; };
+		D3A9347C22D6C172004B5ECA /* transition_linearblur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_linearblur.metal; sourceTree = "<group>"; };
+		D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_glitchmemories.metal; sourceTree = "<group>"; };
 		D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_windowblinds.metal; sourceTree = "<group>"; };
 		D3C565C922D67CC400C8B244 /* transition_colorphase.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_colorphase.metal; sourceTree = "<group>"; };
 		D3C565CB22D67CD700C8B244 /* transition_wind.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_wind.metal; sourceTree = "<group>"; };
@@ -60,9 +66,12 @@
 			children = (
 				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
 				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
+				D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */,
 				D3C565C922D67CC400C8B244 /* transition_colorphase.metal */,
 				D3C565CB22D67CD700C8B244 /* transition_wind.metal */,
 				D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */,
+				D3A9347A22D6C0D7004B5ECA /* transition_displacement.metal */,
+				D3A9347C22D6C172004B5ECA /* transition_linearblur.metal */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -185,13 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A9347F22D6C194004B5ECA /* transition_glitchmemories.metal in Sources */,
 				D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */,
 				D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */,
 				D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */,
+				D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
 				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
+				D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,13 +46,13 @@ class ViewController: UIViewController {
             videoMerger.transtion_function = "transition_circle"
             break
         case 1:
-            videoMerger.transtion_function = "transition_colorphase"
+            videoMerger.transtion_function = "transition_displacement"
             break
         case 2:
-            videoMerger.transtion_function = "transition_windowblinds"
+            videoMerger.transtion_function = "transition_linearblur"
             break
         case 3:
-            videoMerger.transtion_function = "transition_wind"
+            videoMerger.transtion_function = "transition_glitchmemories"
             break
         default:
             videoMerger.transtion_function = "transition_colorphase"
