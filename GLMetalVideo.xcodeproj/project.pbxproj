@@ -24,6 +24,10 @@
 		D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */; };
 		D3F7ACDD22D854F300E57E24 /* VideoSeqWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD922D854F300E57E24 /* VideoSeqWriter.swift */; };
 		D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */; };
+		D3F7ACEB22D8D4B300E57E24 /* AngularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACE822D8D4B300E57E24 /* AngularTransition.swift */; };
+		D3F7ACEC22D8D4B300E57E24 /* LinearBlurTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */; };
+		D3F7ACED22D8D4B300E57E24 /* DisplacementTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */; };
+		D3F7ACEF22D8D4C400E57E24 /* transition_angular.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */; };
 		F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975922D23FC6000D2A40 /* AppDelegate.swift */; };
 		F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975B22D23FC6000D2A40 /* ViewController.swift */; };
 		F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323975D22D23FC6000D2A40 /* Main.storyboard */; };
@@ -49,6 +53,10 @@
 		D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionRenderer.swift; sourceTree = "<group>"; };
 		D3F7ACD922D854F300E57E24 /* VideoSeqWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSeqWriter.swift; sourceTree = "<group>"; };
 		D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindTransition.swift; sourceTree = "<group>"; };
+		D3F7ACE822D8D4B300E57E24 /* AngularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngularTransition.swift; sourceTree = "<group>"; };
+		D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearBlurTransition.swift; sourceTree = "<group>"; };
+		D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplacementTransition.swift; sourceTree = "<group>"; };
+		D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_angular.metal; sourceTree = "<group>"; };
 		F323975622D23FC6000D2A40 /* GLMetalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMetalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F323975922D23FC6000D2A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F323975B22D23FC6000D2A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 		D3CC671222D4C798002D1C5B /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */,
 				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
 				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
 				D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */,
@@ -109,6 +118,9 @@
 		D3F7ACD522D854AD00E57E24 /* TransitionClasses */ = {
 			isa = PBXGroup;
 			children = (
+				D3F7ACE822D8D4B300E57E24 /* AngularTransition.swift */,
+				D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */,
+				D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */,
 				D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */,
 			);
 			path = TransitionClasses;
@@ -229,14 +241,18 @@
 				D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
 				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
+				D3F7ACEB22D8D4B300E57E24 /* AngularTransition.swift in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
 				D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */,
+				D3F7ACEF22D8D4C400E57E24 /* transition_angular.metal in Sources */,
 				D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */,
 				D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */,
 				D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */,
 				D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */,
+				D3F7ACEC22D8D4B300E57E24 /* LinearBlurTransition.swift in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
+				D3F7ACED22D8D4B300E57E24 /* DisplacementTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,34 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-RH-fFO">
-                                <rect key="frame" x="142" y="318" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-WP-TUI">
+                                <rect key="frame" x="303" y="266" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-ft-Pkv">
+                                <rect key="frame" x="0.0" y="35" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-RH-fFO">
+                                <rect key="frame" x="142.5" y="302" width="90" height="30"/>
                                 <state key="normal" title="MergeVideos"/>
                                 <connections>
                                     <action selector="mergeVideos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9m-po-OzH"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C3t-5W-his">
-                                <rect key="frame" x="34" y="70" width="307" height="29"/>
-                                <segments>
-                                    <segment title="Circle"/>
-                                    <segment title="Displace"/>
-                                    <segment title="LinearBlur"/>
-                                    <segment title="Glitch"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="C3t-5W-his" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="moV-pJ-XgE"/>
-                            <constraint firstItem="C3t-5W-his" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wo0-rk-Ehq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0H0-WP-TUI" secondAttribute="trailing" constant="30" id="CrM-AU-liR"/>
+                            <constraint firstItem="mUl-ft-Pkv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KJY-qV-PEc"/>
+                            <constraint firstItem="0H0-WP-TUI" firstAttribute="top" secondItem="mUl-ft-Pkv" secondAttribute="bottom" constant="15" id="OKS-tE-fQq"/>
+                            <constraint firstItem="mUl-ft-Pkv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Tw9-tv-uzj"/>
+                            <constraint firstItem="MRi-RH-fFO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VAY-R5-SPF"/>
+                            <constraint firstItem="MRi-RH-fFO" firstAttribute="top" secondItem="0H0-WP-TUI" secondAttribute="bottom" constant="15" id="ogQ-4Y-Ptd"/>
+                            <constraint firstAttribute="trailing" secondItem="mUl-ft-Pkv" secondAttribute="trailing" id="urJ-tp-UpG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="filterChoice" destination="C3t-5W-his" id="tgy-vt-fVp"/>
                         <outlet property="mergeVideos" destination="MRi-RH-fFO" id="TFn-7L-COk"/>
+                        <outlet property="statusLabel" destination="0H0-WP-TUI" id="BpF-qf-esa"/>
+                        <outlet property="transitionPicker" destination="mUl-ft-Pkv" id="pAI-MO-P2m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

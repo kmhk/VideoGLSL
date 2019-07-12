@@ -31,8 +31,14 @@ class VideoMerger {
     
     func startRendering() {
         var transition : TransitionRenderer
-        if transtion_function == "transition_wind" {
+        if transtion_function == "transition_displacement" {
+            transition = DisplacementTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_angular" {
+            transition = AngularTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_wind" {
             transition = WindTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_linearblur" {
+            transition = LinearBlurTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else {
             transition = TransitionRenderer(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2), function: transtion_function)
         }
@@ -44,5 +50,4 @@ class VideoMerger {
         writer.startRender(vc: callback, url: exportURL)
     }
 }
-
 

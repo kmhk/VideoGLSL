@@ -12,12 +12,22 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var filterChoice: UISegmentedControl!
+    let transtions : [String] = ["angular", "circle", "colorphase", "displacement", "glitchmemories", "linearblur", "wind", "windowblinds"]
+    @IBOutlet weak var transitionPicker: UIPickerView!
     @IBOutlet weak var mergeVideos: UIButton!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    var selected_transition = "angular"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        transitionPicker.dataSource = self
+        transitionPicker.delegate = self
+        
+        statusLabel.text = "Transtion: 1/" + String(transtions.count)
+        
     }
     
     @IBAction func mergeVideos(_ sender: Any) {
@@ -39,25 +49,9 @@ class ViewController: UIViewController {
         let path = docsURL.path.appending("/mergedVideo.mp4")
         let exportURL = URL.init(fileURLWithPath: path)
         
-        var videoMerger = VideoMerger(url1: url1, url2: url2, export: exportURL, vc: self)
+        let videoMerger = VideoMerger(url1: url1, url2: url2, export: exportURL, vc: self)
         
-        switch filterChoice.selectedSegmentIndex {
-        case 0:
-            videoMerger.transtion_function = "transition_circle"
-            break
-        case 1:
-            videoMerger.transtion_function = "transition_displacement"
-            break
-        case 2:
-            videoMerger.transtion_function = "transition_linearblur"
-            break
-        case 3:
-            videoMerger.transtion_function = "transition_glitchmemories"
-            break
-        default:
-            videoMerger.transtion_function = "transition_colorphase"
-            break
-        }
+        videoMerger.transtion_function = "transition_" + selected_transition
         mergeVideos.isEnabled = false
         
         videoMerger.startRendering()
@@ -67,14 +61,38 @@ class ViewController: UIViewController {
     func openPreviewScreen(_ videoURL:URL) -> Void {
         DispatchQueue.main.async {
             self.mergeVideos.isEnabled = true
+            
+            let player = AVPlayer(url: videoURL)
+            let playerController = AVPlayerViewController()
+            playerController.player = player
+            
+            self.present(playerController, animated: true, completion: {
+                player.play()
+            })
         }
         
-        let player = AVPlayer(url: videoURL)
-        let playerController = AVPlayerViewController()
-        playerController.player = player
-        
-        present(playerController, animated: true, completion: {
-            player.play()
-        })
+    }
+}
+
+extension ViewController : UIPickerViewDelegate {
+    
+}
+
+extension ViewController : UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selected_transition = transtions[row]
+        statusLabel.text = "Transtion: " + String(row + 1) + "/" + String(transtions.count)
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return transtions.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return transtions[row]
     }
 }
