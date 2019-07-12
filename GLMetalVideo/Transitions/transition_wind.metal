@@ -20,10 +20,11 @@ kernel void transition_wind(texture2d<float, access::read> inTexture [[ texture(
                             texture2d<float, access::read> inTexture2 [[ texture(1) ]],
                             texture2d<float, access::write> outTexture [[ texture(2) ]],
                             device const float *progress [[ buffer(0) ]],
+                            device const float *wind_size [[ buffer(1) ]],
                             uint2 gid [[ thread_position_in_grid ]])
 {
     
-    float transition_wind_size = 0.2;
+    float transition_wind_size = *wind_size;
     
     float2 ngid = float2(gid);
     float prog = *progress;
@@ -41,4 +42,5 @@ kernel void transition_wind(texture2d<float, access::read> inTexture [[ texture(
                          orig,
                          m), gid);
 }
+
 

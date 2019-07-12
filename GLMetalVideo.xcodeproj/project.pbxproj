@@ -13,13 +13,17 @@
 		D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */; };
 		D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565C922D67CC400C8B244 /* transition_colorphase.metal */; };
 		D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3C565CB22D67CD700C8B244 /* transition_wind.metal */; };
-		D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC670E22D4C733002D1C5B /* VideoMerger.swift */; };
 		D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC671022D4C77B002D1C5B /* transtion_shader.metal */; };
 		D3CC671822D4C806002D1C5B /* black.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671422D4C806002D1C5B /* black.mov */; };
 		D3CC671922D4C806002D1C5B /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671522D4C806002D1C5B /* silence.mp3 */; };
 		D3CC671A22D4C806002D1C5B /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671622D4C806002D1C5B /* movie1.mov */; };
 		D3CC671B22D4C806002D1C5B /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671722D4C806002D1C5B /* movie2.mov */; };
 		D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC672222D59B2D002D1C5B /* transition_circle.metal */; };
+		D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD622D854F200E57E24 /* VideoMerger.swift */; };
+		D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD722D854F200E57E24 /* VideoSeqReader.swift */; };
+		D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */; };
+		D3F7ACDD22D854F300E57E24 /* VideoSeqWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD922D854F300E57E24 /* VideoSeqWriter.swift */; };
+		D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */; };
 		F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975922D23FC6000D2A40 /* AppDelegate.swift */; };
 		F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975B22D23FC6000D2A40 /* ViewController.swift */; };
 		F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323975D22D23FC6000D2A40 /* Main.storyboard */; };
@@ -34,13 +38,17 @@
 		D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_windowblinds.metal; sourceTree = "<group>"; };
 		D3C565C922D67CC400C8B244 /* transition_colorphase.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_colorphase.metal; sourceTree = "<group>"; };
 		D3C565CB22D67CD700C8B244 /* transition_wind.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_wind.metal; sourceTree = "<group>"; };
-		D3CC670E22D4C733002D1C5B /* VideoMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
 		D3CC671022D4C77B002D1C5B /* transtion_shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transtion_shader.metal; sourceTree = "<group>"; };
 		D3CC671422D4C806002D1C5B /* black.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = black.mov; sourceTree = "<group>"; };
 		D3CC671522D4C806002D1C5B /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
 		D3CC671622D4C806002D1C5B /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
 		D3CC671722D4C806002D1C5B /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
 		D3CC672222D59B2D002D1C5B /* transition_circle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_circle.metal; sourceTree = "<group>"; };
+		D3F7ACD622D854F200E57E24 /* VideoMerger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
+		D3F7ACD722D854F200E57E24 /* VideoSeqReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSeqReader.swift; sourceTree = "<group>"; };
+		D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionRenderer.swift; sourceTree = "<group>"; };
+		D3F7ACD922D854F300E57E24 /* VideoSeqWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSeqWriter.swift; sourceTree = "<group>"; };
+		D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindTransition.swift; sourceTree = "<group>"; };
 		F323975622D23FC6000D2A40 /* GLMetalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMetalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F323975922D23FC6000D2A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F323975B22D23FC6000D2A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,25 @@
 			path = SampleVideos;
 			sourceTree = "<group>";
 		};
+		D3F7ACD422D8545100E57E24 /* TransitionBase */ = {
+			isa = PBXGroup;
+			children = (
+				D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */,
+				D3F7ACD622D854F200E57E24 /* VideoMerger.swift */,
+				D3F7ACD722D854F200E57E24 /* VideoSeqReader.swift */,
+				D3F7ACD922D854F300E57E24 /* VideoSeqWriter.swift */,
+			);
+			path = TransitionBase;
+			sourceTree = "<group>";
+		};
+		D3F7ACD522D854AD00E57E24 /* TransitionClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */,
+			);
+			path = TransitionClasses;
+			sourceTree = "<group>";
+		};
 		F323974D22D23FC6000D2A40 = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				D3CC671322D4C7A4002D1C5B /* SampleVideos */,
+				D3F7ACD422D8545100E57E24 /* TransitionBase */,
+				D3F7ACD522D854AD00E57E24 /* TransitionClasses */,
 				D3CC671222D4C798002D1C5B /* Transitions */,
 				F323975922D23FC6000D2A40 /* AppDelegate.swift */,
-				D3CC670E22D4C733002D1C5B /* VideoMerger.swift */,
 				F323975B22D23FC6000D2A40 /* ViewController.swift */,
 				F323975D22D23FC6000D2A40 /* Main.storyboard */,
 				F323976022D23FC7000D2A40 /* Assets.xcassets */,
@@ -196,13 +224,17 @@
 			files = (
 				D3A9347F22D6C194004B5ECA /* transition_glitchmemories.metal in Sources */,
 				D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */,
-				D3CC670F22D4C733002D1C5B /* VideoMerger.swift in Sources */,
+				D3F7ACDD22D854F300E57E24 /* VideoSeqWriter.swift in Sources */,
 				D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */,
 				D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
 				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
+				D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */,
+				D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */,
+				D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */,
+				D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */,
 				D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
 			);
