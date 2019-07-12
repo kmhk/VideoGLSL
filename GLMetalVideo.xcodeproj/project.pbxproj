@@ -28,6 +28,19 @@
 		D3F7ACEC22D8D4B300E57E24 /* LinearBlurTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */; };
 		D3F7ACED22D8D4B300E57E24 /* DisplacementTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */; };
 		D3F7ACEF22D8D4C400E57E24 /* transition_angular.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */; };
+		D3F7AD1222D92D7900E57E24 /* transition_butterfly_wave_scrawler.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD0C22D92D7800E57E24 /* transition_butterfly_wave_scrawler.metal */; };
+		D3F7AD1322D92D7900E57E24 /* transition_cannabisleaf.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD0D22D92D7800E57E24 /* transition_cannabisleaf.metal */; };
+		D3F7AD1422D92D7900E57E24 /* transition_burn.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD0E22D92D7800E57E24 /* transition_burn.metal */; };
+		D3F7AD1522D92D7900E57E24 /* transition_bow_tie_horizontal.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD0F22D92D7800E57E24 /* transition_bow_tie_horizontal.metal */; };
+		D3F7AD1622D92D7900E57E24 /* transition_bouncer.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1022D92D7800E57E24 /* transition_bouncer.metal */; };
+		D3F7AD1722D92D7900E57E24 /* transition_bow_tie_vertical.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1122D92D7800E57E24 /* transition_bow_tie_vertical.metal */; };
+		D3F7AD1F22D92DE700E57E24 /* BurnTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1822D92DE600E57E24 /* BurnTransition.swift */; };
+		D3F7AD2022D92DE700E57E24 /* BowTieHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1922D92DE600E57E24 /* BowTieHorizontal.swift */; };
+		D3F7AD2122D92DE700E57E24 /* BowTieVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1A22D92DE600E57E24 /* BowTieVertical.swift */; };
+		D3F7AD2222D92DE700E57E24 /* PixelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1B22D92DE600E57E24 /* PixelPoint.swift */; };
+		D3F7AD2322D92DE700E57E24 /* ButterflyWavesScrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1C22D92DE700E57E24 /* ButterflyWavesScrawler.swift */; };
+		D3F7AD2422D92DE700E57E24 /* BouncerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1D22D92DE700E57E24 /* BouncerTransition.swift */; };
+		D3F7AD2522D92DE700E57E24 /* CannabisleafTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7AD1E22D92DE700E57E24 /* CannabisleafTransition.swift */; };
 		F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975922D23FC6000D2A40 /* AppDelegate.swift */; };
 		F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F323975B22D23FC6000D2A40 /* ViewController.swift */; };
 		F323975F22D23FC6000D2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F323975D22D23FC6000D2A40 /* Main.storyboard */; };
@@ -57,6 +70,19 @@
 		D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearBlurTransition.swift; sourceTree = "<group>"; };
 		D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplacementTransition.swift; sourceTree = "<group>"; };
 		D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_angular.metal; sourceTree = "<group>"; };
+		D3F7AD0C22D92D7800E57E24 /* transition_butterfly_wave_scrawler.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_butterfly_wave_scrawler.metal; sourceTree = "<group>"; };
+		D3F7AD0D22D92D7800E57E24 /* transition_cannabisleaf.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_cannabisleaf.metal; sourceTree = "<group>"; };
+		D3F7AD0E22D92D7800E57E24 /* transition_burn.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_burn.metal; sourceTree = "<group>"; };
+		D3F7AD0F22D92D7800E57E24 /* transition_bow_tie_horizontal.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_bow_tie_horizontal.metal; sourceTree = "<group>"; };
+		D3F7AD1022D92D7800E57E24 /* transition_bouncer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_bouncer.metal; sourceTree = "<group>"; };
+		D3F7AD1122D92D7800E57E24 /* transition_bow_tie_vertical.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_bow_tie_vertical.metal; sourceTree = "<group>"; };
+		D3F7AD1822D92DE600E57E24 /* BurnTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurnTransition.swift; sourceTree = "<group>"; };
+		D3F7AD1922D92DE600E57E24 /* BowTieHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowTieHorizontal.swift; sourceTree = "<group>"; };
+		D3F7AD1A22D92DE600E57E24 /* BowTieVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowTieVertical.swift; sourceTree = "<group>"; };
+		D3F7AD1B22D92DE600E57E24 /* PixelPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelPoint.swift; sourceTree = "<group>"; };
+		D3F7AD1C22D92DE700E57E24 /* ButterflyWavesScrawler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButterflyWavesScrawler.swift; sourceTree = "<group>"; };
+		D3F7AD1D22D92DE700E57E24 /* BouncerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerTransition.swift; sourceTree = "<group>"; };
+		D3F7AD1E22D92DE700E57E24 /* CannabisleafTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannabisleafTransition.swift; sourceTree = "<group>"; };
 		F323975622D23FC6000D2A40 /* GLMetalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLMetalVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F323975922D23FC6000D2A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F323975B22D23FC6000D2A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,8 +106,14 @@
 		D3CC671222D4C798002D1C5B /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */,
 				D3CC671022D4C77B002D1C5B /* transtion_shader.metal */,
+				D3F7ACEE22D8D4C400E57E24 /* transition_angular.metal */,
+				D3F7AD1022D92D7800E57E24 /* transition_bouncer.metal */,
+				D3F7AD0F22D92D7800E57E24 /* transition_bow_tie_horizontal.metal */,
+				D3F7AD1122D92D7800E57E24 /* transition_bow_tie_vertical.metal */,
+				D3F7AD0E22D92D7800E57E24 /* transition_burn.metal */,
+				D3F7AD0C22D92D7800E57E24 /* transition_butterfly_wave_scrawler.metal */,
+				D3F7AD0D22D92D7800E57E24 /* transition_cannabisleaf.metal */,
 				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
 				D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */,
 				D3C565C922D67CC400C8B244 /* transition_colorphase.metal */,
@@ -118,7 +150,14 @@
 		D3F7ACD522D854AD00E57E24 /* TransitionClasses */ = {
 			isa = PBXGroup;
 			children = (
+				D3F7AD1B22D92DE600E57E24 /* PixelPoint.swift */,
 				D3F7ACE822D8D4B300E57E24 /* AngularTransition.swift */,
+				D3F7AD1D22D92DE700E57E24 /* BouncerTransition.swift */,
+				D3F7AD1922D92DE600E57E24 /* BowTieHorizontal.swift */,
+				D3F7AD1A22D92DE600E57E24 /* BowTieVertical.swift */,
+				D3F7AD1822D92DE600E57E24 /* BurnTransition.swift */,
+				D3F7AD1C22D92DE700E57E24 /* ButterflyWavesScrawler.swift */,
+				D3F7AD1E22D92DE700E57E24 /* CannabisleafTransition.swift */,
 				D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */,
 				D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */,
 				D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */,
@@ -237,16 +276,29 @@
 				D3A9347F22D6C194004B5ECA /* transition_glitchmemories.metal in Sources */,
 				D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */,
 				D3F7ACDD22D854F300E57E24 /* VideoSeqWriter.swift in Sources */,
+				D3F7AD2422D92DE700E57E24 /* BouncerTransition.swift in Sources */,
 				D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */,
+				D3F7AD1722D92D7900E57E24 /* transition_bow_tie_vertical.metal in Sources */,
 				D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
+				D3F7AD1322D92D7900E57E24 /* transition_cannabisleaf.metal in Sources */,
 				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
+				D3F7AD2222D92DE700E57E24 /* PixelPoint.swift in Sources */,
 				D3F7ACEB22D8D4B300E57E24 /* AngularTransition.swift in Sources */,
+				D3F7AD2322D92DE700E57E24 /* ButterflyWavesScrawler.swift in Sources */,
+				D3F7AD1222D92D7900E57E24 /* transition_butterfly_wave_scrawler.metal in Sources */,
+				D3F7AD1522D92D7900E57E24 /* transition_bow_tie_horizontal.metal in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
 				D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */,
+				D3F7AD1F22D92DE700E57E24 /* BurnTransition.swift in Sources */,
+				D3F7AD2022D92DE700E57E24 /* BowTieHorizontal.swift in Sources */,
+				D3F7AD1422D92D7900E57E24 /* transition_burn.metal in Sources */,
 				D3F7ACEF22D8D4C400E57E24 /* transition_angular.metal in Sources */,
+				D3F7AD2122D92DE700E57E24 /* BowTieVertical.swift in Sources */,
 				D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */,
+				D3F7AD1622D92D7900E57E24 /* transition_bouncer.metal in Sources */,
+				D3F7AD2522D92DE700E57E24 /* CannabisleafTransition.swift in Sources */,
 				D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */,
 				D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */,
 				D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */,

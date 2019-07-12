@@ -12,7 +12,7 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    let transtions : [String] = ["angular", "circle", "colorphase", "displacement", "glitchmemories", "linearblur", "wind", "windowblinds"]
+    let transtions : [String] = ["angular", "bouncer", "bow_tie_horizontal", "burn", "bow_tie_vertical", "butterfly_wave_scrawler", "cannabisleaf", "circle", "colorphase", "displacement", "glitchmemories", "linearblur", "wind", "windowblinds"]
     @IBOutlet weak var transitionPicker: UIPickerView!
     @IBOutlet weak var mergeVideos: UIButton!
     @IBOutlet weak var statusLabel: UILabel!

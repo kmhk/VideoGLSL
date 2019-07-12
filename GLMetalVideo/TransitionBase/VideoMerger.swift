@@ -31,14 +31,26 @@ class VideoMerger {
     
     func startRendering() {
         var transition : TransitionRenderer
-        if transtion_function == "transition_displacement" {
-            transition = DisplacementTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
-        } else if transtion_function == "transition_angular" {
+        if transtion_function == "transition_angular" {
             transition = AngularTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
-        } else if transtion_function == "transition_wind" {
-            transition = WindTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_bouncer" {
+            transition = BouncerTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_bow_tie_horizontal" {
+            transition = BowTieHorizontal(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_bow_tie_vertical" {
+            transition = BowTieVertical(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_burn" {
+            transition = BurnTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_butterfly_wave_scrawler" {
+            transition = ButterflyWavesScrawler(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_cannabisleaf" {
+            transition = CannabisleafScrawler(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_displacement" {
+            transition = DisplacementTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_linearblur" {
             transition = LinearBlurTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_wind" {
+            transition = WindTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else {
             transition = TransitionRenderer(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2), function: transtion_function)
         }
@@ -50,4 +62,5 @@ class VideoMerger {
         writer.startRender(vc: callback, url: exportURL)
     }
 }
+
 
