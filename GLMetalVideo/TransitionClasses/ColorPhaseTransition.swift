@@ -3,7 +3,7 @@
 //  VideoTrasition
 //
 //  Created by MacMaster on 7/13/19.
-//  Copyright © 2019 MacMaster. All rights reserved.
+//  Copyright © 2019 KMHK. All rights reserved.
 //
 
 import Foundation

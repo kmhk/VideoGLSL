@@ -210,7 +210,6 @@
 		D3F7ACD522D854AD00E57E24 /* TransitionClasses */ = {
 			isa = PBXGroup;
 			children = (
-				D3D6B9EB22DAB3000080DDF0 /* ColorPhaseTransition.swift */,
 				D3F7AD1B22D92DE600E57E24 /* PixelPoint.swift */,
 				D3F7ACE822D8D4B300E57E24 /* AngularTransition.swift */,
 				D3F7AD1D22D92DE700E57E24 /* BouncerTransition.swift */,
@@ -222,6 +221,7 @@
 				D3D6B9C322DAB1670080DDF0 /* CircleCropTransition.swift */,
 				D3D6B9C422DAB1670080DDF0 /* CircleOpenTransition.swift */,
 				D3D6B9C722DAB1670080DDF0 /* ColorDistanceTransition.swift */,
+				D3D6B9EB22DAB3000080DDF0 /* ColorPhaseTransition.swift */,
 				D3D6B9C522DAB1670080DDF0 /* CrazyParametricFunTransition.swift */,
 				D3D6B9C122DAB1660080DDF0 /* CrossHatchTransition.swift */,
 				D3D6B9BE22DAB1660080DDF0 /* CrossZoomTransition.swift */,
