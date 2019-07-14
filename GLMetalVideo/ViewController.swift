@@ -12,7 +12,7 @@ import AVKit
 
 class ViewController: UIViewController {
     
-    let transtions : [String] = ["angular", "bouncer", "bow_tie_horizontal", "burn", "bow_tie_vertical", "butterfly_wave_scrawler", "cannabisleaf", "circle", "colorphase", "displacement", "glitchmemories", "linearblur", "wind", "windowblinds"]
+    let transtions : [String] = ["angular", "bouncer", "bow_tie_horizontal", "burn", "bow_tie_vertical", "butterfly_wave_scrawler", "cannabisleaf", "circle", "circle_crop", "circle_open", "color_distance", "colorphase", "crazy_parametric_fun", "cross_hatch", "cross_wrap", "cross_zoom", "cube", "directional", "directional_wrap", "directional_wipe", "displacement", "doom_screen", "glitchmemories", "linearblur", "wind", "windowblinds"]
     @IBOutlet weak var transitionPicker: UIPickerView!
     @IBOutlet weak var mergeVideos: UIButton!
     @IBOutlet weak var statusLabel: UILabel!

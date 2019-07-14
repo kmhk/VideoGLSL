@@ -19,6 +19,29 @@
 		D3CC671A22D4C806002D1C5B /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671622D4C806002D1C5B /* movie1.mov */; };
 		D3CC671B22D4C806002D1C5B /* movie2.mov in Resources */ = {isa = PBXBuildFile; fileRef = D3CC671722D4C806002D1C5B /* movie2.mov */; };
 		D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3CC672222D59B2D002D1C5B /* transition_circle.metal */; };
+		D3D6B9C822DAB1670080DDF0 /* DoomScreenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9BD22DAB1660080DDF0 /* DoomScreenTransition.swift */; };
+		D3D6B9C922DAB1670080DDF0 /* CrossZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9BE22DAB1660080DDF0 /* CrossZoomTransition.swift */; };
+		D3D6B9CA22DAB1670080DDF0 /* DirectionalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9BF22DAB1660080DDF0 /* DirectionalTransition.swift */; };
+		D3D6B9CB22DAB1670080DDF0 /* CubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C022DAB1660080DDF0 /* CubeTransition.swift */; };
+		D3D6B9CC22DAB1670080DDF0 /* CrossHatchTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C122DAB1660080DDF0 /* CrossHatchTransition.swift */; };
+		D3D6B9CD22DAB1670080DDF0 /* DirectionalWrapTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C222DAB1670080DDF0 /* DirectionalWrapTransition.swift */; };
+		D3D6B9CE22DAB1670080DDF0 /* CircleCropTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C322DAB1670080DDF0 /* CircleCropTransition.swift */; };
+		D3D6B9CF22DAB1670080DDF0 /* CircleOpenTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C422DAB1670080DDF0 /* CircleOpenTransition.swift */; };
+		D3D6B9D022DAB1670080DDF0 /* CrazyParametricFunTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C522DAB1670080DDF0 /* CrazyParametricFunTransition.swift */; };
+		D3D6B9D122DAB1670080DDF0 /* DirectionalWipeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C622DAB1670080DDF0 /* DirectionalWipeTransition.swift */; };
+		D3D6B9D222DAB1670080DDF0 /* ColorDistanceTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9C722DAB1670080DDF0 /* ColorDistanceTransition.swift */; };
+		D3D6B9DF22DAB17E0080DDF0 /* transition_circle_crop.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D322DAB17D0080DDF0 /* transition_circle_crop.metal */; };
+		D3D6B9E022DAB17E0080DDF0 /* transition_cube.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D422DAB17D0080DDF0 /* transition_cube.metal */; };
+		D3D6B9E122DAB17E0080DDF0 /* transition_cross_wrap.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D522DAB17E0080DDF0 /* transition_cross_wrap.metal */; };
+		D3D6B9E222DAB17E0080DDF0 /* transition_directional_wrap.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D622DAB17E0080DDF0 /* transition_directional_wrap.metal */; };
+		D3D6B9E322DAB17E0080DDF0 /* transition_color_distance.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D722DAB17E0080DDF0 /* transition_color_distance.metal */; };
+		D3D6B9E422DAB17E0080DDF0 /* transition_circle_open.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D822DAB17E0080DDF0 /* transition_circle_open.metal */; };
+		D3D6B9E522DAB17E0080DDF0 /* transition_crazy_parametric_fun.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9D922DAB17E0080DDF0 /* transition_crazy_parametric_fun.metal */; };
+		D3D6B9E622DAB17E0080DDF0 /* transition_cross_zoom.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9DA22DAB17E0080DDF0 /* transition_cross_zoom.metal */; };
+		D3D6B9E722DAB17E0080DDF0 /* transition_directional_wipe.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9DB22DAB17E0080DDF0 /* transition_directional_wipe.metal */; };
+		D3D6B9E822DAB17E0080DDF0 /* transition_directional.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9DC22DAB17E0080DDF0 /* transition_directional.metal */; };
+		D3D6B9E922DAB17E0080DDF0 /* transition_doom_screen.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9DD22DAB17E0080DDF0 /* transition_doom_screen.metal */; };
+		D3D6B9EA22DAB17E0080DDF0 /* transition_cross_hatch.metal in Sources */ = {isa = PBXBuildFile; fileRef = D3D6B9DE22DAB17E0080DDF0 /* transition_cross_hatch.metal */; };
 		D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD622D854F200E57E24 /* VideoMerger.swift */; };
 		D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD722D854F200E57E24 /* VideoSeqReader.swift */; };
 		D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */; };
@@ -61,6 +84,29 @@
 		D3CC671622D4C806002D1C5B /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
 		D3CC671722D4C806002D1C5B /* movie2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie2.mov; sourceTree = "<group>"; };
 		D3CC672222D59B2D002D1C5B /* transition_circle.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = transition_circle.metal; sourceTree = "<group>"; };
+		D3D6B9BD22DAB1660080DDF0 /* DoomScreenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoomScreenTransition.swift; sourceTree = "<group>"; };
+		D3D6B9BE22DAB1660080DDF0 /* CrossZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossZoomTransition.swift; sourceTree = "<group>"; };
+		D3D6B9BF22DAB1660080DDF0 /* DirectionalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C022DAB1660080DDF0 /* CubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C122DAB1660080DDF0 /* CrossHatchTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossHatchTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C222DAB1670080DDF0 /* DirectionalWrapTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalWrapTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C322DAB1670080DDF0 /* CircleCropTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleCropTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C422DAB1670080DDF0 /* CircleOpenTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOpenTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C522DAB1670080DDF0 /* CrazyParametricFunTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrazyParametricFunTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C622DAB1670080DDF0 /* DirectionalWipeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalWipeTransition.swift; sourceTree = "<group>"; };
+		D3D6B9C722DAB1670080DDF0 /* ColorDistanceTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDistanceTransition.swift; sourceTree = "<group>"; };
+		D3D6B9D322DAB17D0080DDF0 /* transition_circle_crop.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_circle_crop.metal; sourceTree = "<group>"; };
+		D3D6B9D422DAB17D0080DDF0 /* transition_cube.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_cube.metal; sourceTree = "<group>"; };
+		D3D6B9D522DAB17E0080DDF0 /* transition_cross_wrap.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_cross_wrap.metal; sourceTree = "<group>"; };
+		D3D6B9D622DAB17E0080DDF0 /* transition_directional_wrap.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_directional_wrap.metal; sourceTree = "<group>"; };
+		D3D6B9D722DAB17E0080DDF0 /* transition_color_distance.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_color_distance.metal; sourceTree = "<group>"; };
+		D3D6B9D822DAB17E0080DDF0 /* transition_circle_open.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_circle_open.metal; sourceTree = "<group>"; };
+		D3D6B9D922DAB17E0080DDF0 /* transition_crazy_parametric_fun.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_crazy_parametric_fun.metal; sourceTree = "<group>"; };
+		D3D6B9DA22DAB17E0080DDF0 /* transition_cross_zoom.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_cross_zoom.metal; sourceTree = "<group>"; };
+		D3D6B9DB22DAB17E0080DDF0 /* transition_directional_wipe.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_directional_wipe.metal; sourceTree = "<group>"; };
+		D3D6B9DC22DAB17E0080DDF0 /* transition_directional.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_directional.metal; sourceTree = "<group>"; };
+		D3D6B9DD22DAB17E0080DDF0 /* transition_doom_screen.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_doom_screen.metal; sourceTree = "<group>"; };
+		D3D6B9DE22DAB17E0080DDF0 /* transition_cross_hatch.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = transition_cross_hatch.metal; sourceTree = "<group>"; };
 		D3F7ACD622D854F200E57E24 /* VideoMerger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMerger.swift; sourceTree = "<group>"; };
 		D3F7ACD722D854F200E57E24 /* VideoSeqReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSeqReader.swift; sourceTree = "<group>"; };
 		D3F7ACD822D854F200E57E24 /* TransitionRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionRenderer.swift; sourceTree = "<group>"; };
@@ -115,12 +161,24 @@
 				D3F7AD0C22D92D7800E57E24 /* transition_butterfly_wave_scrawler.metal */,
 				D3F7AD0D22D92D7800E57E24 /* transition_cannabisleaf.metal */,
 				D3CC672222D59B2D002D1C5B /* transition_circle.metal */,
-				D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */,
+				D3D6B9D322DAB17D0080DDF0 /* transition_circle_crop.metal */,
+				D3D6B9D822DAB17E0080DDF0 /* transition_circle_open.metal */,
+				D3D6B9D722DAB17E0080DDF0 /* transition_color_distance.metal */,
 				D3C565C922D67CC400C8B244 /* transition_colorphase.metal */,
+				D3D6B9D922DAB17E0080DDF0 /* transition_crazy_parametric_fun.metal */,
+				D3D6B9DE22DAB17E0080DDF0 /* transition_cross_hatch.metal */,
+				D3D6B9D522DAB17E0080DDF0 /* transition_cross_wrap.metal */,
+				D3D6B9DA22DAB17E0080DDF0 /* transition_cross_zoom.metal */,
+				D3D6B9D422DAB17D0080DDF0 /* transition_cube.metal */,
+				D3D6B9DB22DAB17E0080DDF0 /* transition_directional_wipe.metal */,
+				D3D6B9D622DAB17E0080DDF0 /* transition_directional_wrap.metal */,
+				D3D6B9DC22DAB17E0080DDF0 /* transition_directional.metal */,
+				D3A9347A22D6C0D7004B5ECA /* transition_displacement.metal */,
+				D3D6B9DD22DAB17E0080DDF0 /* transition_doom_screen.metal */,
+				D3A9347E22D6C194004B5ECA /* transition_glitchmemories.metal */,
+				D3A9347C22D6C172004B5ECA /* transition_linearblur.metal */,
 				D3C565CB22D67CD700C8B244 /* transition_wind.metal */,
 				D3C565C722D67CA300C8B244 /* transition_windowblinds.metal */,
-				D3A9347A22D6C0D7004B5ECA /* transition_displacement.metal */,
-				D3A9347C22D6C172004B5ECA /* transition_linearblur.metal */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -158,7 +216,18 @@
 				D3F7AD1822D92DE600E57E24 /* BurnTransition.swift */,
 				D3F7AD1C22D92DE700E57E24 /* ButterflyWavesScrawler.swift */,
 				D3F7AD1E22D92DE700E57E24 /* CannabisleafTransition.swift */,
+				D3D6B9C322DAB1670080DDF0 /* CircleCropTransition.swift */,
+				D3D6B9C422DAB1670080DDF0 /* CircleOpenTransition.swift */,
+				D3D6B9C722DAB1670080DDF0 /* ColorDistanceTransition.swift */,
+				D3D6B9C522DAB1670080DDF0 /* CrazyParametricFunTransition.swift */,
+				D3D6B9C122DAB1660080DDF0 /* CrossHatchTransition.swift */,
+				D3D6B9BE22DAB1660080DDF0 /* CrossZoomTransition.swift */,
+				D3D6B9C022DAB1660080DDF0 /* CubeTransition.swift */,
+				D3D6B9BF22DAB1660080DDF0 /* DirectionalTransition.swift */,
+				D3D6B9C622DAB1670080DDF0 /* DirectionalWipeTransition.swift */,
+				D3D6B9C222DAB1670080DDF0 /* DirectionalWrapTransition.swift */,
 				D3F7ACEA22D8D4B300E57E24 /* DisplacementTransition.swift */,
+				D3D6B9BD22DAB1660080DDF0 /* DoomScreenTransition.swift */,
 				D3F7ACE922D8D4B300E57E24 /* LinearBlurTransition.swift */,
 				D3F7ACDE22D854FA00E57E24 /* WindTransition.swift */,
 			);
@@ -274,37 +343,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A9347F22D6C194004B5ECA /* transition_glitchmemories.metal in Sources */,
+				D3D6B9E122DAB17E0080DDF0 /* transition_cross_wrap.metal in Sources */,
 				D3C565C822D67CA300C8B244 /* transition_windowblinds.metal in Sources */,
+				D3D6B9E322DAB17E0080DDF0 /* transition_color_distance.metal in Sources */,
 				D3F7ACDD22D854F300E57E24 /* VideoSeqWriter.swift in Sources */,
 				D3F7AD2422D92DE700E57E24 /* BouncerTransition.swift in Sources */,
 				D3C565CC22D67CD700C8B244 /* transition_wind.metal in Sources */,
 				D3F7AD1722D92D7900E57E24 /* transition_bow_tie_vertical.metal in Sources */,
 				D3A9347B22D6C0D7004B5ECA /* transition_displacement.metal in Sources */,
+				D3D6B9C822DAB1670080DDF0 /* DoomScreenTransition.swift in Sources */,
 				F323975C22D23FC6000D2A40 /* ViewController.swift in Sources */,
 				D3F7AD1322D92D7900E57E24 /* transition_cannabisleaf.metal in Sources */,
 				D3C565CA22D67CC400C8B244 /* transition_colorphase.metal in Sources */,
 				D3F7AD2222D92DE700E57E24 /* PixelPoint.swift in Sources */,
+				D3D6B9D122DAB1670080DDF0 /* DirectionalWipeTransition.swift in Sources */,
+				D3D6B9C922DAB1670080DDF0 /* CrossZoomTransition.swift in Sources */,
 				D3F7ACEB22D8D4B300E57E24 /* AngularTransition.swift in Sources */,
+				D3D6B9CE22DAB1670080DDF0 /* CircleCropTransition.swift in Sources */,
+				D3D6B9E022DAB17E0080DDF0 /* transition_cube.metal in Sources */,
 				D3F7AD2322D92DE700E57E24 /* ButterflyWavesScrawler.swift in Sources */,
 				D3F7AD1222D92D7900E57E24 /* transition_butterfly_wave_scrawler.metal in Sources */,
 				D3F7AD1522D92D7900E57E24 /* transition_bow_tie_horizontal.metal in Sources */,
 				F323975A22D23FC6000D2A40 /* AppDelegate.swift in Sources */,
+				D3D6B9D022DAB1670080DDF0 /* CrazyParametricFunTransition.swift in Sources */,
 				D3CC672322D59B2D002D1C5B /* transition_circle.metal in Sources */,
+				D3D6B9D222DAB1670080DDF0 /* ColorDistanceTransition.swift in Sources */,
+				D3D6B9CF22DAB1670080DDF0 /* CircleOpenTransition.swift in Sources */,
 				D3F7ACDB22D854F300E57E24 /* VideoSeqReader.swift in Sources */,
 				D3F7AD1F22D92DE700E57E24 /* BurnTransition.swift in Sources */,
 				D3F7AD2022D92DE700E57E24 /* BowTieHorizontal.swift in Sources */,
+				D3D6B9E622DAB17E0080DDF0 /* transition_cross_zoom.metal in Sources */,
 				D3F7AD1422D92D7900E57E24 /* transition_burn.metal in Sources */,
+				D3D6B9DF22DAB17E0080DDF0 /* transition_circle_crop.metal in Sources */,
 				D3F7ACEF22D8D4C400E57E24 /* transition_angular.metal in Sources */,
+				D3D6B9CC22DAB1670080DDF0 /* CrossHatchTransition.swift in Sources */,
+				D3D6B9EA22DAB17E0080DDF0 /* transition_cross_hatch.metal in Sources */,
+				D3D6B9E922DAB17E0080DDF0 /* transition_doom_screen.metal in Sources */,
 				D3F7AD2122D92DE700E57E24 /* BowTieVertical.swift in Sources */,
 				D3F7ACDA22D854F300E57E24 /* VideoMerger.swift in Sources */,
 				D3F7AD1622D92D7900E57E24 /* transition_bouncer.metal in Sources */,
 				D3F7AD2522D92DE700E57E24 /* CannabisleafTransition.swift in Sources */,
+				D3D6B9CD22DAB1670080DDF0 /* DirectionalWrapTransition.swift in Sources */,
+				D3D6B9CA22DAB1670080DDF0 /* DirectionalTransition.swift in Sources */,
+				D3D6B9E222DAB17E0080DDF0 /* transition_directional_wrap.metal in Sources */,
 				D3F7ACDF22D854FA00E57E24 /* WindTransition.swift in Sources */,
 				D3F7ACDC22D854F300E57E24 /* TransitionRenderer.swift in Sources */,
+				D3D6B9E822DAB17E0080DDF0 /* transition_directional.metal in Sources */,
 				D3A9347D22D6C172004B5ECA /* transition_linearblur.metal in Sources */,
 				D3F7ACEC22D8D4B300E57E24 /* LinearBlurTransition.swift in Sources */,
+				D3D6B9CB22DAB1670080DDF0 /* CubeTransition.swift in Sources */,
 				D3CC671122D4C77B002D1C5B /* transtion_shader.metal in Sources */,
 				D3F7ACED22D8D4B300E57E24 /* DisplacementTransition.swift in Sources */,
+				D3D6B9E522DAB17E0080DDF0 /* transition_crazy_parametric_fun.metal in Sources */,
+				D3D6B9E722DAB17E0080DDF0 /* transition_directional_wipe.metal in Sources */,
+				D3D6B9E422DAB17E0080DDF0 /* transition_circle_open.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

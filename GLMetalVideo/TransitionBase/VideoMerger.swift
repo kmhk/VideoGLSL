@@ -45,8 +45,32 @@ class VideoMerger {
             transition = ButterflyWavesScrawler(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_cannabisleaf" {
             transition = CannabisleafScrawler(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_circle_crop" {
+            transition = CircleCropTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_circle_open" {
+            transition = CircleOpenTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_color_distance" {
+            transition = ColorDistanceTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_colorphase" {
+            transition = ColorPhaseTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_crazy_parametric_fun" {
+            transition = CrazyParametricFunTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_cross_hatch" {
+            transition = CrossHatchTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_cross_zoom" {
+            transition = CrossZoomTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_cube" {
+            transition = CubeTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_displacement" {
             transition = DisplacementTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_directional" {
+            transition = DirectionalTranstion(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_directional_wrap" {
+            transition = DirectionalWrapTranstion(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_directional_wipe" {
+            transition = DirectionalWipeTranstion(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_doom_screen" {
+            transition = DoomScreenTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_linearblur" {
             transition = LinearBlurTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_wind" {
@@ -62,5 +86,4 @@ class VideoMerger {
         writer.startRender(vc: callback, url: exportURL)
     }
 }
-
 
