@@ -19,7 +19,7 @@ final class DoomScreenTransition : TransitionRenderer {
     var dripScale = 0.5
     
     init(asset: AVAsset, asset1: AVAsset) {
-        super.init(asset: asset, asset1: asset1, function: "transition_crazy_parametric_fun")
+        super.init(asset: asset, asset1: asset1, function: "transition_doom_screen")
         
     }
     
