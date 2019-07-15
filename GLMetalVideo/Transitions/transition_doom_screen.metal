@@ -55,6 +55,8 @@ kernel void transition_doom_screen(texture2d<float, access::read> inTexture [[ t
     
     ngid.x /= inTexture.get_width();
     ngid.y /= inTexture.get_height();
+    //ngid.y = 1- ngid.y;
+    
     
     float4 orig = inTexture.read(gid);
     float4 secOrig = inTexture2.read(gid);

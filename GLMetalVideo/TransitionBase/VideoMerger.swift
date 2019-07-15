@@ -71,6 +71,22 @@ class VideoMerger {
             transition = DirectionalWipeTranstion(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_doom_screen" {
             transition = DoomScreenTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_doorway" {
+            transition = DoorwayTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_dreamy_zoom" {
+            transition = DreamyZoomTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_fade_color" {
+            transition = FadeColorTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_fade_gray_scale" {
+            transition = FadeGrayScaleTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_film_burn" {
+            transition = FilmBurnTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_flyeye" {
+            transition = FlyeyeTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_grid_flip" {
+            transition = GridFlipTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
+        } else if transtion_function == "transition_hexagon" {
+            transition = HexagonTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_linearblur" {
             transition = LinearBlurTransition(asset: AVAsset(url: videoUrl1), asset1: AVAsset(url: videoUrl2))
         } else if transtion_function == "transition_wind" {

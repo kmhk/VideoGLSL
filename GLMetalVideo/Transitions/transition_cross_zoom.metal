@@ -12,6 +12,8 @@
 
 using namespace metal;
 
+uint2 toUint2(float2 ngid, texture2d<float, access::read> inTexture);
+
 float rand (float2 co);
 
 float Linear_ease(float begin, float change, float duration, float time) {
@@ -75,7 +77,9 @@ kernel void transition_cross_zoom(texture2d<float, access::read> inTexture [[ te
     for (float t = 0.0; t <= 40.0; t++) {
         float percent = (t + offset) / 40.0;
         float weight = 4.0 * (percent - percent * percent);
-        color += crossFade(texCoord + toCenter * percent * strength1, dissolve, secOrig, orig) * weight;
+        color += crossFade(texCoord + toCenter * percent * strength1, dissolve,
+                           inTexture2.read(toUint2(texCoord + toCenter * percent * strength1, inTexture2)),
+                           inTexture.read(toUint2(texCoord + toCenter * percent * strength1, inTexture))) * weight;
         total += weight;
     }
     outTexture.write(float4(color / total, 1.0), gid);
